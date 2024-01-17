@@ -1,23 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 :root {
-    --body-color: #1C1C1C;
-    --background-color: #1F2937;
-    --password-box-color: #273549;
-    --password-font-color: #55F991;
-    --divider-line-color: #2F3E53;
-    --button-color: #10B981;
-    --primary-font-color: #FFFFFF;
-    --secondary-font-color: #4ADF86;
-    --tertiary-font-color: #D5D4D8;
+  --body-color: #1c1c1c;
+  --background-color: #1f2937;
+  --password-box-color: #273549;
+  --password-font-color: #55f991;
+  --divider-line-color: #2f3e53;
+  --button-color: #10b981;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #4adf86;
+  --tertiary-font-color: #d5d4d8;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -30,34 +30,32 @@ body {
 }
 
 .container {
-    background-color: var(--background-color);
-    line-height: 40px;
-    padding: 100px;
+  background-color: var(--background-color);
+  line-height: 40px;
+  padding: 100px;
 }
 
 h1 {
-    color: var(--primary-font-color);
+  color: var(--primary-font-color);
 }
 
-.secondary-title {
-    color:  rebeccapurple;
+span {
+  color: var(--secondary-font-color);
 }
 
 .bottom-container {
-    display: flex;
-
+  display: flex;
 }
 
 #password1-el {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 #password1-el,
 #password2-el {
-    background-color: var(--password-box-color);
-    color: var(--password-font-color);
-    height: 40px;
-    width: 100%;
-    text-align: center;
+  background-color: var(--password-box-color);
+  color: var(--password-font-color);
+  height: 40px;
+  width: 100%;
+  text-align: center;
 }
-

@@ -43,12 +43,28 @@ span {
   color: var(--secondary-font-color);
 }
 
+.top-container p {
+  color: var(--tertiary-font-color);
+}
+
 .bottom-container {
   display: flex;
 }
 
-#password1-el {
-  margin-right: 20px;
+#generatePassword {
+  background-color: var(--button-color);
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--body-color);
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.bottom-container {
+  border-top: 1px solid var(--tertiary-font-color);
+  padding-top: 40px;
 }
 
 #password1-el,
@@ -56,6 +72,16 @@ span {
   background-color: var(--password-box-color);
   color: var(--password-font-color);
   height: 40px;
-  width: 100%;
+  width: 200px;
   text-align: center;
 }
+
+#copy-password1,
+#copy-password2 {
+  color: var(--body-color);
+  background-color: var(--button-color);
+  border: none;
+  cursor: pointer;
+}
+
+

@@ -82,6 +82,19 @@ span {
   background-color: var(--button-color);
   border: none;
   cursor: pointer;
+  width: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#reset-btn {
+  background-color: red;
+  padding: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(208, 208, 208);
+  margin-top: 10px;
 }
 
 

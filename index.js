@@ -4,6 +4,7 @@ const copyPassword2 = document.getElementById("copy-password2")
 let password1 = document.getElementById("password1-el");
 let password2 = document.getElementById("password2-el");
 let generatePassword = document.getElementById("generatePassword");
+let resetBtn = document.getElementById("reset-btn");
 
 generatePassword.addEventListener("click", function() {
   let randomPasswordOne = ""
@@ -17,12 +18,15 @@ generatePassword.addEventListener("click", function() {
   password1.textContent = randomPasswordOne
   password2.textContent = randomPasswordTwo
 
+  copyPassword1.innerHTML = "Copy to clipboard"
+  copyPassword2.innerHTML = "Copy to clipboard"
   
 });
 
 copyPassword1.addEventListener("click", async function() {
   const passwordToCopy = password1.textContent
- 
+  copyPassword1.innerHTML = "Copied!"
+
   try {
     await navigator.clipboard.writeText(passwordToCopy)
     console.log("Password 1 copied to clipboard")
@@ -35,7 +39,7 @@ copyPassword1.addEventListener("click", async function() {
 
 copyPassword2.addEventListener("click", async function() {
   const passwordToCopy = password2.textContent
-
+    copyPassword2.innerHTML = "Copied!"
     try {
     await navigator.clipboard.writeText(passwordToCopy)
     console.log("Password 2 copied to clipboard")
@@ -44,4 +48,9 @@ copyPassword2.addEventListener("click", async function() {
   }
 
 });
+
+resetBtn.addEventListener("click", () => {
+  console.log("button clicked")
+  window.location.reload()
+})
 
